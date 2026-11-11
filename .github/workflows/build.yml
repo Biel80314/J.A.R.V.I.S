@@ -27,4 +27,4 @@ jobs:
       - name: Publicar APK
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release create "v${{ github.run_number }}" Jarvis.apk --title "Jarvis v${{ github.rname: Build APK
+        run: gh release create "v${{ github.run_number }}" Jarvis.apk --title "Jarvis v${{ github.run_number }}" --notes "APK de debug"
